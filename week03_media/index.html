@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Image Tag Example</h2>
+  <img src="images/Yes Look At Us.jpg" width="400px" alt="sample image">
+
+  <h2>Video Tag Example</h2>
+  <video width="700" controls>
+    <source src="video/Meeeee_1.mp4" type="video/mp4">
+    Your browser does not support this video tag
+  </video>
+
+  <h2>Image Tag Example</h2>
+  <img src="svg/Untitled-1.svg" width="800px" alt="sample image">
+
+  <h2>SVG via Code Example</h2>
+  <svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Green circle">
+    <circle cx="60" cy="60" r="45" fill="#676767"></circle>
+  </svg>
+
+  <h2>Canvas Code Example</h2>
+  <canvas id="myCanvas" width="300" height="150"></canvas>
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "#898989"
+    ctx.fillRect(50, 50, 200, 50)
+  </script>
+</body>
+</html>
