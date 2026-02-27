@@ -14,19 +14,18 @@
   border-radius: 15px;
   width: 300px;
   height: 500px;
-  color: white;
-  font-family: "Gill San", sans-serif;
   display: inline-block;
   vertical-align: top;
   margin: 50px 50px;
 }
 
-a {
+.card h3, p {
   color: white;
+  font-family: "Gill San", sans-serif;
 }
 
 a:hover {
-  color: blue;
+  color: gray;
 }
 
 .card img {
@@ -43,5 +42,14 @@ a:hover {
 
 section {
   text-align: center;
+}
+
+.button {
+  background-color: white;
+  color: navy;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: "Gill San", sans-serif;
+  text-decoration: none;
 }
 
