@@ -1,0 +1,85 @@
+:root {
+  --primary-color-small: pink;
+  --spacing-small: 20px;
+  --font-small: 20px;
+
+  --primary-color-medium: rgb(182, 100, 113);
+  --spacing-medium: 24px;
+  --font-medium: 24px;
+
+  --primary-color-large: rgb(149, 58, 73);
+  --spacing-large: 28px;
+  --font-large: 28px;
+}
+
+
+header {
+  background: var(--primary-color-small);
+  text-align: left;
+  padding: var(--spacing-small);
+}
+header h1 {
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+.card {
+  text-align: left;
+  padding: var(--spacing-small);
+}
+
+.card-content h2 {
+  font-size: var(--font-small);
+  font-family: 'Courier New', Courier, monospace;
+}
+.card-content p {
+  font-family: 'Courier New', Courier, monospace;
+}
+.card-content button {
+  color: #fff;
+  padding: var(--spacing-small);
+  border-radius: 20px;
+  background-color: rgb(149, 58, 73);
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-content button:hover {
+  color: pink;
+}
+
+
+@media (min-width: 768px) {
+header {
+  background: var(--primary-color-medium);
+  text-align: center;
+  padding: var(--spacing-medium);
+}
+header h1 {
+  font-size: 28px;
+}
+.card {
+  text-align: center;
+  padding: var(--spacing-medium);
+}
+.card-content h2 {
+  font-size: var(--font-medium);
+}
+}
+
+
+@media (min-width: 1024px) {
+header {
+  background: var(--primary-color-large);
+  text-align: center;
+  padding: var(--spacing-large);
+}
+header h1 {
+  font-size: 32px;
+}
+.card {
+  text-align: center;
+  padding: var(--spacing-large);
+}
+.card-content h2 {
+  font-size: var(--font-large);
+}
+}
