@@ -1,0 +1,69 @@
+:root {
+  --primary-color: pink;
+  --secondary-color: rgb(172, 58, 77);
+  --border-color: pink;
+  --border-width: 2px;
+  --button-background-color: rgb(172, 58, 77);
+  --button-text-color: white;
+  --button-hover-background-color: pink;
+  --button-padding: 15px 25px;
+  --card-padding-mobile: 20px;
+  --card-padding-desktop: 35px;
+  --card-border-radius: 15px;
+  --card-margin: 25px;
+  --card-width-desktop: 500px;
+  --card-width-mobile: 350px;
+  --heading-font-size-mobile: 22px;
+  --heading-font-size-desktop: 28px;
+  --paragraph-font-size: 14px;
+  --image-width: 100%;
+}
+
+img {
+  width: var(--image-width);
+}
+
+.card {
+  width: var(--card-width-desktop);
+  padding: var(--card-padding-desktop);
+  margin: var(--card-margin);
+  border: solid var(--border-width);
+  border-radius: var(--card-border-radius);
+  border-color: var(--border-color);
+}
+
+.card p {
+  color: var(--secondary-color);
+  font-size: var(--paragraph-font-size);
+}
+
+.card h2 {
+  color: var(--primary-color);
+  font-size: var(--heading-font-size-desktop);
+}
+
+.card button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  padding: var(--button-padding);
+  border: 0;
+}
+
+.card button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+@media (max-width: 768px) {
+  .card {
+  width: var(--card-width-mobile);
+  padding: var(--card-padding-mobile);
+  margin: var(--card-margin);
+  border: solid var(--border-width);
+  border-radius: var(--card-border-radius);
+  border-color: var(--border-color);
+}
+.card h2 {
+  color: var(--primary-color);
+  font-size: var(--heading-font-size-mobile);
+}
+}
